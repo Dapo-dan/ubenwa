@@ -1,3 +1,4 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -147,7 +148,9 @@ class _SignUpFormState extends State<SignUpForm> {
         lastName: nameController.text.split(' ')[1].toString(),
         email: emailController.text,
         password: passwordController.text);
-    print(response);
+    if (kDebugMode) {
+      print(response);
+    }
     Get.back();
     if (response is String) {
       SnackBars.showErrorSnackBar('Oops!', response);

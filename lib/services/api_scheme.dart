@@ -1,4 +1,6 @@
 import 'dart:convert';
+import 'package:flutter/foundation.dart';
+
 import 'api_docs.dart';
 import 'internet_services.dart';
 
@@ -8,7 +10,9 @@ class ApiScheme {
       isNewBorn,
       required String url,
       token}) async {
-    print(url);
+    if (kDebugMode) {
+      print(url);
+    }
     if (await InternetServices.checkConnectivity()) {
       try {
         var response = await ApiDocs.makePostRequest(

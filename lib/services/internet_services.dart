@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, non_constant_identifier_names
+
 import 'dart:async';
 import 'dart:io';
 import 'package:connectivity_plus/connectivity_plus.dart';
@@ -22,10 +24,4 @@ class InternetServices {
     }
     return false;
   }
-
-
-
-
-
-
 }

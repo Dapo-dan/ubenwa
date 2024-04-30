@@ -1,3 +1,5 @@
+import 'package:flutter/foundation.dart';
+
 import 'api_docs.dart';
 import 'api_scheme.dart';
 
@@ -18,7 +20,9 @@ class AuthenticationServices {
       "last_name": lastName,
     };
 
-    print(data);
+    if (kDebugMode) {
+      print(data);
+    }
     return await ApiScheme.initialisePostRequest(
         url: 'ApiDocs.signUpUrl', data: data);
   }

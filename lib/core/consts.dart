@@ -1,3 +1,5 @@
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 const String emptyEmailField = 'Email field cannot be empty!';
@@ -7,18 +9,12 @@ const String invalidPassword = 'Password should contain dot (.) and comma (,)';
 const String fullNameLength = 'You should enter more than a name';
 const String invalidName = 'Invalid name';
 const String invalidEmailField =
-    "Email provided isn\'t valid.Try another email address";
+    "Email provided isn't valid.Try another email address";
 const String passwordLengthError = 'Password length must be greater than 6';
 const String dotRegex = r'^(?=.*?[.]).{6,}$';
 const String commaRegex = r'^(?=.*?[,]).{6,}$';
 const String fullNameRegex = r"^\s*([A-Za-z]{1,}([\.,] |[-']| ))+[A-Za-z]+\.?\s*$";
-const String emailRegex = '[a-zA-Z0-9\+\.\_\%\-\+]{1,256}' +
-    '\\@' +
-    '[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}' +
-    '(' +
-    '\\.' +
-    '[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25}' +
-    ')+';
+const String emailRegex = '[a-zA-Z0-9+._%-+]{1,256}\\@[a-zA-Z0-9][a-zA-Z0-9\\-]{0,64}(\\.[a-zA-Z0-9][a-zA-Z0-9\\-]{0,25})+';
 
 
 
