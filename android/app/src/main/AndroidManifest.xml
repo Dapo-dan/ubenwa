@@ -6,7 +6,6 @@
    <application
         android:label="ubenwa_damilare"
         android:name="${applicationName}"
-        android:exported="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
