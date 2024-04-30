@@ -34,13 +34,11 @@ class FullNameValidator {
       return invalidName;
     }
 
-    if(value.split(' ').length<2){
+    if (value.split(' ').length < 2) {
       return fullNameLength;
-
     }
 
     return null;
-
   }
 }
 
@@ -55,8 +53,8 @@ class PasswordValidator {
     }
 
     final regdotExp = RegExp(dotRegex);
-    final regcommaExp = RegExp(commaRegex);
-    if (regdotExp.hasMatch(value) && regcommaExp.hasMatch(value)) {
+    // if (regdotExp.hasMatch(value) && regcommaExp.hasMatch(value)) {
+    if (regdotExp.hasMatch(value)) {
       return null;
     }
 
